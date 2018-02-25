@@ -1,0 +1,28 @@
+@import "variables";
+@import "fonts";
+@import "button";
+@import "visually-hidden";
+@import "title";
+@import "header";
+@import "main-navigation";
+@import "hero";
+@import "advantages";
+@import "steps";
+@import "example";
+@import "contacts";
+@import "cooperation";
+@import "footer";
+@import "social";
+@import "copyright";
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

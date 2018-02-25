@@ -1,0 +1,34 @@
+.example {
+  background-color: $bg-color;
+  padding: 20px;
+}
+
+.example__title {
+  color: $primary-font-color;
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $main-font;
+  font-weight: 400;
+  color: $primary-font-color;
+}
+
+.example__desk {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.examle__price {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $main-font;
+  font-weight: 400;
+  color: $primary-font-color;
+}

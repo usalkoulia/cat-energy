@@ -1,0 +1,17 @@
+.cooperation {
+  padding: 20px;
+  display: flex;
+}
+
+.cooperation__title {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-font-color;
+}
+
+.cooperation__address {
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-font-color;
+}
