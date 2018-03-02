@@ -1,0 +1,23 @@
+.product-card {
+  border-bottom: 1px solid #ededed;
+  padding: 20px;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $main-font;
+  color: $primary-font-color;
+  text-transform: uppercase;
+  width: 80px;
+}
+
+.product-card__table {
+  font-size: 12px;
+  line-height: 16px;
+  color: $secondary-font-color;
+}
