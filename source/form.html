@@ -42,77 +42,77 @@
           <!-- picking - подбор -->
           <fieldset class="picking-form__fieldset">
             <legend class="visually-hidden">Общие данные</legend>
-            <label>
+            <label class="picking-form__label">
               Имя:<sup>*</sup>
-              <input type="text" name="name" placeholder="Барсик" required>
+              <input class="picking-form__text-input" type="text" name="name" placeholder="Барсик" required>
             </label>
-            <label>
+            <label class="picking-form__label">
               Вес (кг):<sup>*</sup>
-              <input type="text" name="weight" placeholder="7" required>
+              <input class="picking-form__text-input" type="text" name="weight" placeholder="7" required>
             </label>
-            <label>
+            <label class="picking-form__label">
               Возраст (лет):
-              <input type="text" name="age" placeholder="7">
+              <input class="picking-form__text-input" type="text" name="age" placeholder="7">
             </label>
           </fieldset>
 
           <fieldset class="picking-form__fieldset">
             <legend class="visually-hidden">Цель прогаммы</legend>
             <!-- purpose - цель -->
-            <label>
-              <input type="radio" name="purpose" value="diet" checked>
+            <label class="picking-form__label">
+              <input class="picking-form__radio-input" type="radio" name="purpose" value="diet" checked>
               Похудение
             </label>
-            <label>
-              <input type="radio" name="purpose" value="mass">
+            <label class="picking-form__label">
+              <input class="picking-form__radio-input" type="radio" name="purpose" value="mass">
               Набор массы
             </label>
-            <label>
-              <input type="radio" name="purpose" value="advice">
+            <label class="picking-form__label">
+              <input class="picking-form__radio-input" type="radio" name="purpose" value="advice">
               Не знаю (нужен ваш совет)
             </label>
           </fieldset>
 
           <fieldset class="picking-form__fieldset">
             <legend class="picking-form__title">Контактные данные (владельца кота)</legend>
-            <label>
+            <label class="picking-form__label">
               E-mail:<sup>*</sup>
-              <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <input class="picking-form__text-input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label>
+            <label class="picking-form__label">
               Телефон:<sup>*</sup>
-              <input type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
+              <input class="picking-form__text-input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
 
           <fieldset class="picking-form__fieldset">
             <legend class="picking-form__title">Комментарий</legend>
-            <textarea name="name" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="picking-form__textarea" name="name" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="picking-form__fieldset">
             <legend class="picking-form__title">Дополнительно</legend>
-            <label>
-              <input type="checkbox" name="extra" value="sugar-free" checked>
+            <label class="picking-form__label">
+              <input class="picking-form__checkbox-input" type="checkbox" name="extra" value="sugar-free" checked>
               Сахарозаменитель
             </label>
-            <label>
-              <input type="checkbox" name="extra" value="water">
+            <label class="picking-form__label">
+              <input class="picking-form__checkbox-input" type="checkbox" name="extra" value="water">
               Питьевая вода
             </label>
-            <label>
-              <input type="checkbox" name="extra" value="milk">
+            <label class="picking-form__label">
+              <input class="picking-form__checkbox-input" type="checkbox" name="extra" value="milk">
               Молоко
             </label>
-            <label>
-              <input type="checkbox" name="extra" value="vitamins">
+            <label class="picking-form__label">
+              <input class="picking-form__checkbox-input" type="checkbox" name="extra" value="vitamins">
               Витамины
             </label>
           </fieldset>
 
           <div class="programs__button-wrapper">
             <button class="programs__button button button--primary" type="submit">Отправить заявку</button>
-            <p class="programs__text"><sup>*</sup> — Обязательные поля</p>
+            <p class="programs__note"><sup>*</sup> — Обязательные поля</p>
           </div>
         </form>
       </section>
