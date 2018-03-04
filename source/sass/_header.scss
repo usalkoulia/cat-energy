@@ -2,3 +2,26 @@
   background-color: #ffffff;
   min-height: 65px;
 }
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  align-items: center;
+}
+
+.header__toggle-wrapper {
+  width: 33px;
+  text-align: right;
+}
+
+.header__menu-toggle {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.header__menu-icon--burger {
+  display: none;
+}

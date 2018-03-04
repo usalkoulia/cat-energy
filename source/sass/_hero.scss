@@ -1,10 +1,27 @@
+.hero {
+  background-image:
+    url("../img/index-can-mobile@1x.png"),
+    url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 280px, 320px;
+  background-position: center 165px, top;
+  height: 480px;
+  display: flex;
+}
+
 .hero__wrapper {
   padding: 20px;
+  padding-bottom: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .hero__title {
-  // color: #ffffff;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .hero__slogan {
@@ -12,5 +29,9 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  // color: #ffffff;
+  color: #ffffff;
+}
+
+.hero__link {
+  margin-top: auto;
 }

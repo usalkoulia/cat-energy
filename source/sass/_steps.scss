@@ -12,12 +12,44 @@
   list-style-type: none;
   font-size: 14px;
   line-height: 18px;
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+.steps__item::before {
+  content: "";
+  background-position: center center;
+  background-color: $primary-color;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.steps__item--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.steps__item--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.steps__item--dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.steps__item--clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
 .steps__title {
   color: $primary-font-color;
+  margin-bottom: 30px;
 }
 
 .steps__text {
   color: $secondary-font-color;
+  margin-left: 80px;
 }

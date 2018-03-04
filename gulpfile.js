@@ -1,5 +1,6 @@
 "use strict";
 
+var path = require('path');
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
@@ -44,6 +45,7 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/**/*.svg", () => run("sprite", "html"));
   gulp.watch("source/js/**/*.js", ["copy"]);
 });
 
@@ -83,6 +85,16 @@ gulp.task("clean", function () {
 
 gulp.task("sprite", function() {
   return gulp.src("source/img/*.svg")
+    .pipe(imagemin([
+      imagemin.svgo({
+        plugins: [
+          {inlineStyles: {
+            onlyMatchedOnce: false,
+            removeMatchedSelectors: true,
+          }},
+        ]
+      })
+    ]))
     .pipe(svgstore({
       inlineSvg: true
     }))

@@ -5,11 +5,33 @@
 
 .example__title {
   color: $primary-font-color;
+  margin-bottom: 40px;
 }
 
 .example__text {
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.example__expenses {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.example__result {
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  position: relative;
+  width: 125px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+
+  &:first-child {
+    margin-right: 30px;
+  }
 }
 
 .example__value {
@@ -23,12 +45,47 @@
 .example__desk {
   font-size: 12px;
   line-height: 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  text-align: center;
+
+  span {
+    background-color: $bg-color;
+    padding: 0 10px;
+    display: inline-block;
+    width: 90px;
+    text-transform: lowercase;
+  }
 }
 
-.examle__price {
+.example__price {
   font-size: 14px;
   line-height: 20px;
   font-family: $main-font;
   font-weight: 400;
   color: $primary-font-color;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.example__slider {
+  text-align: center;
+}
+
+.example__image {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 40px;
+}
+
+.example__buttons {
+  text-align: center;
+}
+
+.example__button {
+  font-family: $main-font;
+  font-size: 16px;
+  text-transform: uppercase;
 }
