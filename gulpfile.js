@@ -29,7 +29,7 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream())
-    .pipe(minify())
+    .pipe(minify({ restructure: false }))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
 });

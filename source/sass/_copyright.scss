@@ -4,3 +4,10 @@
   line-height: 16px;
   color: $secondary-font-color;
 }
+
+.copyright__wrapper {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
