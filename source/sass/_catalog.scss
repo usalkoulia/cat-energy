@@ -1,15 +1,13 @@
-.catalog__item {
-  list-style-type: none;
-}
-
 .catalog__title {
   font-family: $main-font;
   color: $primary-font-color;
   font-weight: 400;
+  padding: 30px 20px;
 
-  &--more {
-    font-size: 16px;
-    line-height: 20px;
+  &--main {
+    font-size: 36px;
+    line-height: 60px;
+    border-bottom: 1px solid #ededed;
   }
 
   &--list {
@@ -18,23 +16,91 @@
   }
 }
 
+.catalog__list {
+  margin-bottom: 40px;
+}
+
+.catalog__item {
+  list-style-type: none;
+}
+
+.catalog__subtitle {
+  font-family: $main-font;
+  color: $primary-font-color;
+  font-weight: 400;
+
+  &--more {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
+
 .catalog__more {
   padding: 20px;
   border-bottom: 1px solid #ededed;
+  text-align: center;
 }
 
 .catalog__text--more {
   font-size: 12px;
   color: $secondary-font-color;
+  margin-bottom: 20px;
 }
 
 .catalog__promo {
-  padding: 20px 0;
   margin: 0 20px;
+  background-image:
+    url("../img/icon-gift.svg"),
+    url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 289px;
+  background-size: 60px, cover;
+  background-position: center 60px, center;
   background-color: #6fb346;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .catalog__text--promo {
   font-size: 16px;
   color: #ffffff;
+  width: 180px;
+  padding-top: 190px;
+  margin: 0 auto;
+}
+
+.catalog__button {
+  margin-bottom: 25px;
+}
+
+.catalog__button--plus {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.catalog__button--plus::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 14px;
+  left: 0;
+  position: absolute;
+}
+
+.catalog__button--plus::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 14px;
+  left: 0;
+  transform: rotate(90deg);
+  position: absolute;
 }

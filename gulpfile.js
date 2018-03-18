@@ -45,7 +45,7 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
-  gulp.watch("source/**/*.svg", () => run("sprite", "html"));
+  gulp.watch("source/**/*.svg", () => run("copy", "sprite", "html"));
   gulp.watch("source/js/**/*.js", ["copy"]);
 });
 
@@ -66,13 +66,14 @@ gulp.task("webp", function() {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "picturefill", "style", "images", "sprite", "html", "compress", done);
+  run("clean", "copy", "picturefill", "style", "images", "webp", "sprite", "html", "compress", done);
 });
 
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**"
+    "source/js/**",
+    "source/img/**/*.svg"
   ], {
     base: "source"
   })
