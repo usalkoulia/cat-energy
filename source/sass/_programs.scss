@@ -1,9 +1,14 @@
+.programs__wrapper {
+  padding: 20px;
+}
+
 .programs__text {
   font-family: $main-font;
   font-size: 14px;
   line-height: 18px;
   color: $primary-font-color;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .programs__note {

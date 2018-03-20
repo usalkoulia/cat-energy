@@ -56,11 +56,13 @@
     </header>
 
     <main>
-      <h1 class="title">Подбор программы</h1>
+      <h1 class="title title--form">Подбор программы</h1>
 
       <section class="programs">
-        <p class="programs__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form class="programs__form picking-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="programs__wrapper">
+          <p class="programs__text">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+          <form class="programs__form picking-form" action="https://echo.htmlacademy.ru" method="post">
+        </div>
           <!-- picking - подбор -->
           <fieldset class="picking-form__fieldset">
             <legend class="visually-hidden">Общие данные</legend>
@@ -96,24 +98,27 @@
           </fieldset>
 
           <fieldset class="picking-form__fieldset">
-            <legend class="picking-form__title">Контактные данные (владельца кота)</legend>
-            <label class="picking-form__label">
+            <legend class="visually-hidden">Контактные данные</legend>
+            <h2 class="picking-form__title">Контактные данные (владельца кота)</h2>
+            <label class="picking-form__label picking-form__label--email">
               E-mail:<sup>*</sup>
               <input class="picking-form__text-input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="picking-form__label">
+            <label class="picking-form__label picking-form__label--phone">
               Телефон:<sup>*</sup>
               <input class="picking-form__text-input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
 
           <fieldset class="picking-form__fieldset">
-            <legend class="picking-form__title">Комментарий</legend>
+            <legend class="visually-hidden">Комментарий</legend>
+            <h2 class="picking-form__title">Комментарий</h2>
             <textarea class="picking-form__textarea" name="name" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="picking-form__fieldset">
-            <legend class="picking-form__title">Дополнительно</legend>
+            <legend class="visually-hidden">Дополнительно</legend>
+            <h2 class="picking-form__title">Дополнительно</h2>
             <label class="picking-form__label">
               <input class="picking-form__checkbox-input" type="checkbox" name="extra" value="sugar-free" checked>
               Сахарозаменитель

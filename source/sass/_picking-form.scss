@@ -1,21 +1,57 @@
 .picking-form__fieldset {
   padding: 20px;
   border: none;
-  border-bottom: 1px solid #ededed;
   display: flex;
   text-transform: uppercase;
   font-family: $main-font;
 }
 
+.picking-form__fieldset:nth-of-type(1),
+.picking-form__fieldset:nth-of-type(2) {
+  border-bottom: 1px solid #ededed;
+}
+
 .picking-form__title {
+  font-family: $main-font;
+  font-weight: 400;
   text-transform: none;
   font-size: 24px;
   line-height: 24px;
+  margin: 10px 0 30px 0;
 }
 
 .picking-form__label {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.picking-form__label:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.picking-form__label--email::after {
+  content: "";
+  width: 17px;
+  height: 13px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.picking-form__label--phone::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 13px;
+  right: 15px;
 }
 
 .picking-form__text-input {
