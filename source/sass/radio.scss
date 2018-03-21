@@ -1,0 +1,22 @@
+.radio__icon {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 2px solid #cecece;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.radio__input:checked + .radio__icon::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}
