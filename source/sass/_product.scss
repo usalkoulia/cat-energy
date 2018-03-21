@@ -21,8 +21,18 @@
   width: 80px;
 }
 
+.product-card__table-wrapper {
+  flex-grow: 1;
+}
+
 .product-card__table {
   font-size: 12px;
   line-height: 16px;
   color: $secondary-font-color;
+  width: 100%;
+  max-width: 140px;
+
+  td:last-child {
+    text-align: right;
+  }
 }
