@@ -11,6 +11,14 @@
   align-items: center;
 }
 
+.header__logo-mob {
+  display: block;
+}
+
+.header__logo-tab {
+  display: none;
+}
+
 .header__toggle-wrapper {
   width: 33px;
   text-align: right;
@@ -24,4 +32,28 @@
 
 .header__menu-icon--burger {
   display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .header__centering {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__wrapper {
+    border: none;
+    padding: 20px 30px;
+  }
+
+  .header__logo-mob {
+    display: none;
+  }
+
+  .header__logo-tab {
+    display: block;
+  }
+
+  .header__toggle-wrapper {
+    display: none;
+  }
 }

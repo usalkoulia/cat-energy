@@ -10,8 +10,6 @@
 
 .steps__item {
   list-style-type: none;
-  font-size: 14px;
-  line-height: 18px;
   position: relative;
   margin-bottom: 20px;
   min-height: 60px;
@@ -21,6 +19,7 @@
   content: "";
   background-position: center center;
   background-color: $primary-color;
+  background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   position: absolute;
@@ -52,4 +51,71 @@
 .steps__text {
   color: $secondary-font-color;
   margin-left: 80px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .steps {
+    padding: 20px 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .steps__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .steps__item {
+    width: 324px;
+    min-height: 250px;
+    padding-top: 115px;
+    margin-bottom: 60px;
+  }
+
+  .steps__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .steps__item::after {
+    font-family: $main-font;
+    font-size: 280px;
+    line-height: 202px;
+    top: 0;
+    right: 95px;
+    position: absolute;
+    color: $bg-color;
+    z-index: 1;
+  }
+
+  .steps__item--leaf::after {
+    content: "1";
+  }
+
+  .steps__item--powder::after {
+    content: "2";
+  }
+
+  .steps__item--dining::after {
+    content: "3";
+  }
+
+  .steps__item--clock::after {
+    content: "4";
+  }
+
+  .steps__title {
+    margin-bottom: 60px;
+  }
+
+  .steps__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+    z-index: 2;
+    position: relative;
+  }
 }

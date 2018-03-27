@@ -35,3 +35,36 @@
 .hero__link {
   margin-top: auto;
 }
+
+@media (min-width: $tablet-min-width) {
+  .hero {
+    height: 865px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 215px;
+  }
+
+  .hero__wrapper {
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 500px;
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .hero__title {
+    color: $primary-font-color;
+    margin-bottom: 40px;
+  }
+
+  .hero__slogan {
+    color: $primary-font-color;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .hero__link {
+    margin-top: 45px;
+  }
+}
