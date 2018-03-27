@@ -23,3 +23,34 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: $tablet-min-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .footer__logo {
+    border-bottom: none;
+    margin-bottom: 0;
+    width: 33.3%;
+    text-align: left;
+  }
+
+  .footer__logo-link {
+    margin-bottom: 0;
+  }
+
+  .footer__social {
+    border-bottom: none;
+    margin-bottom: 0;
+    width: 33.3%;
+  }
+
+  .footer__copyright {
+    width: 33.3%;
+    justify-content: flex-end;
+  }
+}

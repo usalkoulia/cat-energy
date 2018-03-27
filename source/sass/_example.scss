@@ -91,3 +91,86 @@
   background-color: transparent;
   border: none;
 }
+
+@media (min-width: $tablet-min-width) {
+  .example {
+    background-color: #ffffff;
+    padding: 30px;
+  }
+
+  .example__title {
+    margin-bottom: 50px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .example__result {
+    width: 160px;
+    height: 70px;
+    line-height: 75px;
+  }
+
+  .example__expenses {
+    margin-bottom: 0;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__desk {
+    font-size: 14px;
+    line-height: 14px;
+
+    span {
+      background-color: #ffffff;
+    }
+  }
+
+  .example__price {
+    font-size: 20px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+    margin-bottom: 0;
+  }
+
+  .example__slider {
+    position: relative;
+  }
+
+  .example__slider::before {
+    content: "";
+    left: -30px;
+    right: -30px;
+    bottom: 0;
+    height: 460px;
+    background-color: $bg-color;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .example__image {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+  }
+
+  .example__button {
+    position: relative; /** z-index работает только с position: relative **/
+    z-index: 2;
+  }
+}
