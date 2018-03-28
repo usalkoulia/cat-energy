@@ -68,7 +68,7 @@
   }
 
   .steps__item {
-    width: 324px;
+    width: calc(50% - 30px);
     min-height: 250px;
     padding-top: 115px;
     margin-bottom: 60px;
@@ -84,7 +84,7 @@
     font-size: 280px;
     line-height: 202px;
     top: 0;
-    right: 95px;
+    left: 118px;
     position: absolute;
     color: $bg-color;
     z-index: 1;
@@ -117,5 +117,20 @@
     width: 250px;
     z-index: 2;
     position: relative;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .steps {
+    padding: 20px 40px;
+    border-bottom: none;
+  }
+
+  .steps__item {
+    width: calc(25% - 40px);
+  }
+
+  .steps__item::after {
+    right: 40px;
   }
 }

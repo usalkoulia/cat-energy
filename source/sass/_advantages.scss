@@ -106,21 +106,24 @@
     width: 200px;
     height: 200px;
     top: 90px;
-    left: 450px;
+    left: auto;
+    right: 60px;
   }
 
   .advantages__item--slim::after {
     width: 140px;
     height: 194px;
     top: 77px;
-    left: 480px;
+    left: auto;
+    right: 90px;
   }
 
   .advantages__item--pro::after {
     width: 270px;
     height: 110px;
     top: 140px;
-    left: 415px;
+    left: auto;
+    right: 25px;
   }
 
   .advantages__title {
@@ -132,7 +135,7 @@
   .advantages__text {
     font-size: 16px;
     line-height: 24px;
-    width: 380px;
+    width: 62%;
     margin-bottom: 60px;
   }
 
@@ -162,6 +165,7 @@
     height: 100px;
     top: 45px;
     left: 50px;
+    right: auto;
   }
 
   .advantages__item--slim::after {
@@ -169,6 +173,7 @@
     height: 97px;
     top: 38px;
     left: 62px;
+    right: auto;
   }
 
   .advantages__item--pro::after {
@@ -176,6 +181,7 @@
     height: 55px;
     top: 68px;
     left: 33px;
+    right: auto;
   }
 
   .advantages__title {
