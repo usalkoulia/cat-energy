@@ -52,3 +52,18 @@
     align-items: 24px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .main-navigation {
+    background-color: transparent;
+  }
+
+  .main-navigation__wrapper {
+    padding: 20px 40px;
+  }
+
+  .main-navigation__link {
+    color: #ffffff;
+    font-size: 20px;
+  }
+}

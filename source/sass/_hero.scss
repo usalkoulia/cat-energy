@@ -1,12 +1,37 @@
 .hero {
-  background-image:
-    url("../img/index-can-mobile@1x.png"),
-    url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 280px, 320px;
-  background-position: center 165px, top;
   height: 480px;
   display: flex;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background-color: #64a83b;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px;
+  position: absolute;
+  height: 305px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  background-image: url("../img/index-can-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 280px;
+  background-position: center;
+  position: absolute;
+  height: 271px;
+  width: 280px;
+  top: 170px;
+  left: 50%;
+  margin-left: -140px;
+  z-index: 2;
 }
 
 .hero__wrapper {
@@ -17,6 +42,8 @@
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
+  z-index: 3;
+  position: relative;
 }
 
 .hero__title {
@@ -39,10 +66,22 @@
 @media (min-width: $tablet-min-width) {
   .hero {
     height: 865px;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero::after {
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center 215px;
+    background-position: center;
+    width: 709px;
+    height: 609px;
+    top: 212px;
+    left: 50%;
+    margin-left: -355px;
   }
 
   .hero__wrapper {
@@ -66,5 +105,33 @@
 
   .hero__link {
     margin-top: 45px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .hero {
+    background-size: 552px, 680px;
+    padding-top: 220px;
+    height: 750px;
+  }
+
+  .hero::before {
+    display: block;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 680px;
+    height: 696px;
+    top: 0;
+    right: 0;
+    left: 50%;
+  }
+
+  .hero::after {
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 552px;
+    height: 499px;
+    left: 62%;
   }
 }

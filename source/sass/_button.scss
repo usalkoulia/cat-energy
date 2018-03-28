@@ -11,15 +11,26 @@
   height: 40px;
   display: inline-block;
   border: none;
+  max-width: 280px;
 }
 
 .button--primary {
   background-color: $primary-color;
   color: #ffffff;
-  max-width: 280px;
 }
 
 .button--secondary {
   background-color: #f2f2f2;
-  max-width: 280px;
+}
+
+@media (min-width: $desktop-min-width) {
+  .button {
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+  }
+
+  .button--primary {
+    max-width: 245px;
+  }
 }

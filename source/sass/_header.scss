@@ -15,7 +15,8 @@
   display: block;
 }
 
-.header__logo-tab {
+.header__logo-tab,
+.header__logo-desk {
   display: none;
 }
 
@@ -45,7 +46,8 @@
     padding: 20px 30px;
   }
 
-  .header__logo-mob {
+  .header__logo-mob,
+  .header__logo-desk {
     display: none;
   }
 
@@ -54,6 +56,30 @@
   }
 
   .header__toggle-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .header {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+  }
+
+  .header__wrapper {
+    padding: 20px 40px;
+  }
+
+  .header__logo-desk {
+    display: block;
+  }
+
+  .header__logo-mob,
+  .header__logo-tab {
     display: none;
   }
 }
