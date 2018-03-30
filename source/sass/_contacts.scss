@@ -1,3 +1,10 @@
 .contacts {
   background-color: #ffffff;
 }
+
+@media (min-width: $desktop-min-width) {
+  .contacts {
+    position: relative;
+    z-index: 5;
+  }
+}

@@ -40,6 +40,7 @@
   font-family: $main-font;
   font-weight: 400;
   color: $primary-font-color;
+  text-transform: uppercase;
 }
 
 .example__desk {
@@ -68,6 +69,7 @@
   color: $primary-font-color;
   text-align: center;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .example__slider {
@@ -96,6 +98,18 @@
   .example {
     background-color: #ffffff;
     padding: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      left: -30px;
+      right: -30px;
+      bottom: 0;
+      height: 460px;
+      background-color: $bg-color;
+      position: absolute;
+      z-index: 1;
+    }
   }
 
   .example__title {
@@ -132,34 +146,20 @@
 
   .example__desk {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 31px;
 
     span {
       background-color: #ffffff;
+      width: auto;
     }
   }
 
   .example__price {
     font-size: 20px;
     line-height: 20px;
-    width: 160px;
+    width: 180px;
     text-align: right;
     margin-bottom: 0;
-  }
-
-  .example__slider {
-    position: relative;
-  }
-
-  .example__slider::before {
-    content: "";
-    left: -30px;
-    right: -30px;
-    bottom: 0;
-    height: 460px;
-    background-color: $bg-color;
-    position: absolute;
-    z-index: 1;
   }
 
   .example__image {
@@ -172,5 +172,58 @@
   .example__button {
     position: relative; /** z-index работает только с position: relative **/
     z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .example {
+    padding: 40px;
+    display: flex;
+    min-height: 675px;
+  }
+
+  .example__title {
+    margin-bottom: 140px;
+    margin-top: 45px;
+  }
+
+  .example__main-wrapper {
+    z-index: 2;
+    flex: 1;
+  }
+
+  .example__text {
+    width: 82%;
+    margin-bottom: 60px;
+  }
+
+  .example__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .example__expenses {
+    margin-bottom: 50px;
+  }
+
+  .example__desk {
+    span {
+      background-color: $bg-color;
+    }
+  }
+
+  .example__price {
+    width: auto;
+    text-align: left;
+  }
+
+  .example__image {
+    width: 690px;
+  }
+
+  .example__slider {
+    z-index: 2;
+    width: 690px;
   }
 }

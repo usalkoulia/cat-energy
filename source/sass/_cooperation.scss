@@ -36,3 +36,24 @@
     width: 170px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .cooperation {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    width: 570px;
+    padding: 60px 70px;
+    z-index: 10;
+  }
+
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .cooperation__address {
+    font-size: 16px;
+    text-align: left;
+  }
+}
