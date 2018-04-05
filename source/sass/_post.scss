@@ -1,0 +1,15 @@
+@media (min-width: $tablet-min-width) {
+  .post__image-wrapper {
+    width: 220px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
+  }
+
+  .post__image {
+    width: auto;
+    height: auto;
+  }
+}

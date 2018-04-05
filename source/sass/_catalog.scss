@@ -47,24 +47,30 @@
 
 .catalog__promo {
   margin: 0 20px;
-  background-image:
-    url("../img/icon-gift.svg"),
-    url("../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 289px;
-  background-size: 60px, cover;
-  background-position: center 60px, center;
+  background-size: cover;
+  background-position: center;
   background-color: #6fb346;
   text-align: center;
   margin-bottom: 35px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .catalog__text--promo {
   font-size: 16px;
   color: #ffffff;
   width: 180px;
-  padding-top: 190px;
-  margin: 0 auto;
 }
 
 .catalog__button {
@@ -109,38 +115,79 @@
       font-size: 60px;
       border-bottom: none;
     }
+
+    &--list {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 70px;
+    }
   }
 
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
+
+    &--extra {
+      flex-direction: column;
+      align-items: stretch;
+      margin-bottom: 60px;
+    }
   }
 
   .catalog__item {
     margin: 30px;
-    width: 324px;
+    margin-top: 0;
+  }
+
+  .catalog__subtitle {
+    &--more {
+      font-size: 20px;
+    }
   }
 
   .catalog__more {
-    border: 1px solid red;
+    border: 1px solid #e6e6e6;
     width: 324px;
     height: 432px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+  }
+
+  .catalog__text--more {
+    font-size: 16px;
   }
 
   .catalog__promo {
     margin: 0 30px;
-    background-position: 90px center, center;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-position: center;
     min-height: 200px;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   .catalog__text--promo {
-    padding-top: 90px;
     text-align: left;
-    padding-left: 420px;
+  }
+
+  .catalog__button--plus {
+    width: 60px;
+    height: 60px;
+  }
+
+  .catalog__button--plus::before,
+  .catalog__button--plus::after {
+    width: 60px;
   }
 }
