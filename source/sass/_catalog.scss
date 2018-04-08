@@ -135,11 +135,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 30px;
 
     &--extra {
       flex-direction: column;
       align-items: stretch;
-      margin: 0 30px;
       margin-bottom: 70px;
     }
   }
@@ -212,6 +212,15 @@
     padding: 20px 40px;
   }
 
+  .catalog__list {
+    margin: 0 40px;
+
+    &--extra {
+      width: 895px;
+      flex-wrap: nowrap;
+    }
+  }
+
   .catalog__wrapper {
     display: flex;
     margin-bottom: 80px;
@@ -227,11 +236,6 @@
   .catalog__subtitle--more,
   .catalog__text--more {
     width: auto;
-  }
-
-  .catalog__list--extra {
-    width: 895px;
-    margin: 0 40px;
   }
 
   .catalog__promo {
