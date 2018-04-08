@@ -1,7 +1,6 @@
 .extra-card {
   border-bottom: 1px solid #cdcdcd;
   padding: 20px 0;
-  margin: 0 20px;
   display: flex;
   flex-direction: column;
 }
@@ -35,7 +34,6 @@
 @media (min-width: $tablet-min-width) {
   .extra-card {
     border: 1px solid #cdcdcd;
-    margin: 0 30px;
     padding: 30px 40px;
 
     &:not(:last-child) {
@@ -74,7 +72,6 @@
 
 @media (min-width: $desktop-min-width) {
   .extra-card {
-    margin: 0 40px;
     display: flex;
     flex-direction: row;
     align-items: center;

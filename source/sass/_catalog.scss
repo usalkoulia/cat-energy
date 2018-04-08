@@ -18,6 +18,10 @@
 
 .catalog__list {
   margin-bottom: 40px;
+
+  &--extra {
+    margin: 0 20px;
+  }
 }
 
 .catalog__item {
@@ -135,12 +139,12 @@
     &--extra {
       flex-direction: column;
       align-items: stretch;
-      margin-bottom: 60px;
+      margin: 0 30px;
+      margin-bottom: 70px;
     }
   }
 
   .catalog__item {
-    margin: 30px;
     margin-top: 0;
     padding: 40px;
   }
@@ -168,7 +172,7 @@
   }
 
   .catalog__promo {
-    margin: 0 30px 75px 30px;
+    margin: 0 30px 70px 30px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-position: center;
     background-size: cover;
@@ -214,11 +218,6 @@
     justify-content: space-between;
   }
 
-  .catalog__item {
-    margin: 40px;
-    margin-top: 0;
-  }
-
   .catalog__more {
     width: 245px;
     margin-top: 150px;
@@ -232,7 +231,7 @@
 
   .catalog__list--extra {
     width: 895px;
-    margin-bottom: 0;
+    margin: 0 40px;
   }
 
   .catalog__promo {
