@@ -76,7 +76,6 @@
   .extra-card {
     margin: 0 40px;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     padding: 15px 0;
@@ -84,8 +83,21 @@
     border-right: none;
   }
 
+  .extra-card__wrapper {
+    width: 100%;
+  }
+
+  .extra-card__table {
+    width: 100%;
+
+    td {
+      text-align: left;
+    }
+  }
+
   .extra-card__button {
     min-width: 245px;
     width: auto;
+    margin-left: 40px;
   }
 }

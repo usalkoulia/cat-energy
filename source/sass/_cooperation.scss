@@ -21,14 +21,15 @@
 
 @media (min-width: $tablet-min-width) {
   .cooperation {
-    padding: 40px 70px 60px 70px;
-    background-color: #ffffff;
+    padding: 60px 40px;
+    background-color: $bg-color;
     display: flex;
     justify-content: space-between;
   }
 
   .cooperation__title {
     width: 175px;
+    font-size: 20px;
   }
 
   .cooperation__address {
@@ -45,6 +46,7 @@
     width: 570px;
     padding: 60px 70px;
     z-index: 10;
+    background-color: #ffffff;
   }
 
   .cooperation__title {
