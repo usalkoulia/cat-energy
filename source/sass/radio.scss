@@ -20,3 +20,17 @@
   left: 7px;
   top: 7px;
 }
+
+@media (min-width: $tablet-min-width) {
+  .radio__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .radio__input:checked + .radio__icon::after {
+    width: 18px;
+    height: 18px;
+    left: 9px;
+    top: 9px;
+  }
+}

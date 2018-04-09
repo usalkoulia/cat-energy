@@ -3,15 +3,19 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-}
 
-.title--form {
-  margin: 30px 20px 10px 20px;
+  &--form {
+    margin: 30px 20px 10px 20px;
+  }
 }
 
 @media (min-width: $tablet-min-width) {
   .title {
     font-size: 60px;
     line-height: 60px;
+
+    &--form {
+      margin: 30px;
+    }
   }
 }

@@ -83,3 +83,67 @@
 .picking-form__textarea::placeholder {
   color: $secondary-font-color;
 }
+
+@media (min-width: $tablet-min-width) {
+  .picking-form {
+    padding: 30px;
+  }
+
+  .picking-form__fieldset {
+    padding: 40px;
+  }
+
+  .picking-form__fieldset:nth-of-type(1) {
+    border: none;
+  }
+
+  .picking-form__fieldset:nth-of-type(2) {
+    border: 1px solid #ededed;
+    margin: 0 40px;
+  }
+
+  .picking-form__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 70px;
+  }
+
+  .picking-form__label {
+    font-size: 20px;
+  }
+
+  .picking-form__label:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  .picking-form__label--email::after {
+    top: 19px;
+    right: 20px;
+  }
+
+  .picking-form__label--phone::after {
+    top: 16px;
+    right: 16px;
+  }
+
+  .picking-form__text-input {
+    font-size: 20px;
+    line-height: 20px;
+    height: 50px;
+  }
+
+  .picking-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .picking-form__label {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .picking-form__textarea {
+    font-size: 20px;
+    height: 170px;
+  }
+}
