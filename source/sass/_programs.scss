@@ -28,6 +28,7 @@
   .programs__button-wrapper {
     padding: 40px;
     display: flex;
+    justify-content: space-between;
   }
 
   .programs__text {
@@ -40,10 +41,12 @@
   .programs__note {
     font-size: 16px;
     line-height: 16px;
-    margin-left: 60px;
+    width: 45%;
+    text-align: left;
   }
 
   .programs__button {
     width: 45%;
+    margin-bottom: 0;
   }
 }

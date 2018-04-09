@@ -135,9 +135,10 @@
   .picking-form__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     .picking-form__label {
-      width: 50%;
+      width: 45%;
       margin-bottom: 30px;
     }
   }
