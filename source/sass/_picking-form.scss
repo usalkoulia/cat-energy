@@ -65,6 +65,14 @@
   color: $secondary-font-color;
   text-transform: uppercase;
   margin-left: 15px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $secondary-font-color;
+  }
 }
 
 .picking-form__textarea {
@@ -214,6 +222,14 @@
 
     .picking-form__label {
       width: 18%;
+    }
+  }
+
+  .picking-form__text-input {
+    outline: none;
+
+    &:active {
+      border: 2px solid $secondary-font-color;
     }
   }
 

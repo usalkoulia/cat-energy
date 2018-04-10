@@ -46,5 +46,23 @@
 
   .button--primary {
     max-width: 245px;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .button--secondary {
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }

@@ -192,4 +192,16 @@
   .advantages__text {
     width: 100%;
   }
+
+  .advantages__link {
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      .advantages__icon-arrow {
+        path {
+          fill: red;
+        }
+      }
+    }
+  }
 }

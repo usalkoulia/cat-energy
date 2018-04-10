@@ -50,6 +50,10 @@
   .main-navigation__link {
     font-size: 18px;
     align-items: 24px;
+
+    &--active {
+      border-bottom: 2px solid $primary-color;
+    }
   }
 }
 
@@ -67,6 +71,18 @@
 
     &--index {
       color: #ffffff;
+    }
+
+    &--active-white {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
     }
   }
 }
