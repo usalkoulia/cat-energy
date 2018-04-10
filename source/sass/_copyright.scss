@@ -12,8 +12,26 @@
   align-items: center;
 }
 
+.copyright__logo {
+  fill: #666666;
+}
+
 @media (min-width: $tablet-min-width) {
   .copyright__wrapper {
     width: 160px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .copyright__wrapper {
+    &:hover {
+      .copyright__logo {
+        fill: $primary-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
   }
 }
