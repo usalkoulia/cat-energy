@@ -86,6 +86,10 @@
 
 .advantages__icon-arrow {
   margin-left: 10px;
+
+  &--verylong {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-min-width) {
@@ -193,14 +197,22 @@
     width: 100%;
   }
 
-  .advantages__link {
-    &:active {
+  .advantages__link:active {
       color: rgba(0, 0, 0, 0.3);
 
-      .advantages__icon-arrow {
-        path {
-          fill: red;
-        }
+    .advantages__icon-arrow {
+      fill: red;
+    }
+  }
+
+  .advantages__link:hover {
+    .advantages__icon-arrow {
+      &--long {
+        display: none;
+      }
+
+      &--verylong {
+        display: block;
       }
     }
   }
