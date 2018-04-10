@@ -6,8 +6,8 @@
   font-family: $main-font;
 }
 
-.picking-form__fieldset:nth-of-type(1),
-.picking-form__fieldset:nth-of-type(2) {
+.picking-form__fieldset:first-of-type,
+.picking-form__fieldset--radio {
   border-bottom: 1px solid #ededed;
 }
 
@@ -73,6 +73,7 @@
   padding: 15px;
   font-family: $main-font;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   color: $secondary-font-color;
   text-transform: uppercase;
@@ -91,15 +92,15 @@
 
   .picking-form__fieldset {
     padding: 40px;
+
+    &--radio {
+      border: 1px solid #ededed;
+      margin: 0 40px;
+    }
   }
 
-  .picking-form__fieldset:nth-of-type(1) {
+  .picking-form__fieldset:first-of-type {
     border: none;
-  }
-
-  .picking-form__fieldset:nth-of-type(2) {
-    border: 1px solid #ededed;
-    margin: 0 40px;
   }
 
   .picking-form__title {
@@ -132,7 +133,7 @@
     height: 50px;
   }
 
-  .picking-form__wrapper {
+  .picking-form__wrapper--options {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -144,7 +145,79 @@
   }
 
   .picking-form__textarea {
-    font-size: 20px;
     height: 170px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .picking-form {
+    padding: 0;
+  }
+
+  .picking-form__title {
+    margin-top: 0;
+  }
+
+  .picking-form__wrapper {
+    display: flex;
+
+    &--total {
+      .picking-form__fieldset {
+        flex-grow: 1;
+      }
+    }
+
+    &--contacts {
+      .picking-form__label {
+        margin-bottom: 0;
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .picking-form__fieldset--contacts {
+    padding: 0;
+
+    .picking-form__title {
+      margin-left: 40px;
+    }
+  }
+
+  .picking-form__label--email,
+  .picking-form__label--phone {
+    padding: 40px;
+  }
+
+  .picking-form__label--email::after {
+    top: 58px;
+    right: 58px;
+  }
+
+  .picking-form__label--phone::after {
+    top: 55px;
+    right: 58px;
+  }
+
+  .picking-form__fieldset--radio {
+    margin: 40px;
+    padding: 20px;
+
+    .picking-form__label:not(:last-of-type) {
+      margin-bottom: 13px;
+    }
+  }
+
+  .picking-form__wrapper--options {
+    justify-content: space-between;
+
+    .picking-form__label {
+      width: 18%;
+    }
+  }
+
+  .picking-form__textarea {
+    height: 175px;
   }
 }

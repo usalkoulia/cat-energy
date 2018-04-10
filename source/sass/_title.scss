@@ -19,3 +19,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .title--form {
+    margin: 40px;
+  }
+}

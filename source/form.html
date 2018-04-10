@@ -68,53 +68,57 @@
         <p class="programs__text">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         <form class="programs__form picking-form" action="https://echo.htmlacademy.ru" method="post">
           <!-- picking - подбор -->
-          <fieldset class="picking-form__fieldset">
-            <legend class="visually-hidden">Общие данные</legend>
-            <label class="picking-form__label">
-              Имя:<sup>*</sup>
-              <input class="picking-form__text-input" type="text" name="name" placeholder="Барсик" required>
-            </label>
-            <label class="picking-form__label">
-              Вес (кг):<sup>*</sup>
-              <input class="picking-form__text-input" type="text" name="weight" placeholder="7" required>
-            </label>
-            <label class="picking-form__label">
-              Возраст (лет):
-              <input class="picking-form__text-input" type="text" name="age" placeholder="7">
-            </label>
-          </fieldset>
+          <div class="picking-form__wrapper picking-form__wrapper--total">
+            <fieldset class="picking-form__fieldset">
+              <legend class="visually-hidden">Общие данные</legend>
+              <label class="picking-form__label">
+                Имя:<sup>*</sup>
+                <input class="picking-form__text-input" type="text" name="name" placeholder="Барсик" required>
+              </label>
+              <label class="picking-form__label">
+                Вес (кг):<sup>*</sup>
+                <input class="picking-form__text-input" type="text" name="weight" placeholder="7" required>
+              </label>
+              <label class="picking-form__label">
+                Возраст (лет):
+                <input class="picking-form__text-input" type="text" name="age" placeholder="7">
+              </label>
+            </fieldset>
 
-          <fieldset class="picking-form__fieldset">
-            <legend class="visually-hidden">Цель прогаммы</legend>
-            <!-- purpose - цель -->
-            <label class="picking-form__label radio">
-              <input class="radio__input visually-hidden" type="radio" name="purpose" value="diet" checked>
-              <span class="radio__icon"></span>
-              Похудение
-            </label>
-            <label class="picking-form__label radio">
-              <input class="radio__input visually-hidden" type="radio" name="purpose" value="mass">
-              <span class="radio__icon"></span>
-              Набор массы
-            </label>
-            <label class="picking-form__label radio">
-              <input class="radio__input visually-hidden" type="radio" name="purpose" value="advice">
-              <span class="radio__icon"></span>
-              Не знаю (нужен ваш совет)
-            </label>
-          </fieldset>
+            <fieldset class="picking-form__fieldset picking-form__fieldset--radio">
+              <legend class="visually-hidden">Цель прогаммы</legend>
+              <!-- purpose - цель -->
+              <label class="picking-form__label radio">
+                <input class="radio__input visually-hidden" type="radio" name="purpose" value="diet" checked>
+                <span class="radio__icon"></span>
+                Похудение
+              </label>
+              <label class="picking-form__label radio">
+                <input class="radio__input visually-hidden" type="radio" name="purpose" value="mass">
+                <span class="radio__icon"></span>
+                Набор массы
+              </label>
+              <label class="picking-form__label radio">
+                <input class="radio__input visually-hidden" type="radio" name="purpose" value="advice">
+                <span class="radio__icon"></span>
+                Не знаю (нужен ваш совет)
+              </label>
+            </fieldset>
+          </div>
 
-          <fieldset class="picking-form__fieldset">
+          <fieldset class="picking-form__fieldset picking-form__fieldset--contacts">
             <legend class="visually-hidden">Контактные данные</legend>
             <h2 class="picking-form__title">Контактные данные (владельца кота)</h2>
-            <label class="picking-form__label picking-form__label--email">
-              E-mail:<sup>*</sup>
-              <input class="picking-form__text-input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="picking-form__label picking-form__label--phone">
-              Телефон:<sup>*</sup>
-              <input class="picking-form__text-input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="picking-form__wrapper picking-form__wrapper--contacts">
+              <label class="picking-form__label picking-form__label--email">
+                E-mail:<sup>*</sup>
+                <input class="picking-form__text-input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="picking-form__label picking-form__label--phone">
+                Телефон:<sup>*</sup>
+                <input class="picking-form__text-input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="picking-form__fieldset">
@@ -126,7 +130,7 @@
           <fieldset class="picking-form__fieldset">
             <legend class="visually-hidden">Дополнительно</legend>
             <h2 class="picking-form__title">Дополнительно</h2>
-            <div class="picking-form__wrapper">
+            <div class="picking-form__wrapper picking-form__wrapper--options">
               <label class="picking-form__label checkbox">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="sugar-free" checked>
                 <span class="checkbox__icon"></span>

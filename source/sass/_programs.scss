@@ -50,3 +50,18 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .programs__text {
+    margin: 0 40px 60px 40px;
+  }
+
+  .programs__button-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .programs__button {
+    width: 100%;
+    max-width: 570px;
+  }
+}
