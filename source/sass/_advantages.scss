@@ -201,7 +201,7 @@
       color: rgba(0, 0, 0, 0.3);
 
     .advantages__icon-arrow {
-      fill: red;
+      fill: rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -212,7 +212,7 @@
       }
 
       &--verylong {
-        display: block;
+        display: inline-block;
       }
     }
   }
