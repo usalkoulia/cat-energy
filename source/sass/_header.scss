@@ -1,6 +1,20 @@
 .header {
   background-color: #ffffff;
   min-height: 65px;
+
+  &--active {
+    .header__navigation {
+      display: block;
+    }
+
+    .header__menu-icon--burger {
+      display: none;
+    }
+
+    .header__menu-icon--cross {
+      display: block;
+    }
+  }
 }
 
 .header__wrapper {
@@ -31,7 +45,8 @@
   border: none;
 }
 
-.header__menu-icon--burger {
+.header__navigation,
+.header__menu-icon--cross {
   display: none;
 }
 
@@ -57,6 +72,10 @@
 
   .header__toggle-wrapper {
     display: none;
+  }
+
+  .header__navigation {
+    display: block;
   }
 }
 
