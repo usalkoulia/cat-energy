@@ -58,6 +58,10 @@
 
   &:hover {
     border: 1px solid #cdcdcd;
+
+    & + .picking-form__icon {
+      fill: black;
+    }
   }
 
   &:focus {

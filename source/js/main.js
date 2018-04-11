@@ -20,8 +20,25 @@ header_toggle.addEventListener("click", function(evt) {
 });
 
 search_form.addEventListener("submit", function(evt) {
-  if (!form_name.value || !form_weight.value || !form_email.value || !form_phone.value) {
-    evt.preventDefault();
-    form_name.classList.add(".picking-form__text-input--error");
+  evt.preventDefault();
+
+  if (!form_name.value) {
+    form_name.classList.add("picking-form__text-input--error");
+    form_name.focus();
+  }
+
+  if (!form_name.value) {
+    form_weight.classList.add("picking-form__text-input--error");
+    form_weight.focus();
+  }
+
+  if (!form_name.value) {
+    form_email.classList.add("picking-form__text-input--error");
+    form_email.focus();
+  }
+
+  if (!form_name.value) {
+    form_phone.classList.add("picking-form__text-input--error");
+    form_phone.focus();
   }
 });
