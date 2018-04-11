@@ -30,28 +30,18 @@
   margin-bottom: 15px;
 }
 
-.picking-form__label--email::after {
-  content: "";
-  width: 17px;
-  height: 13px;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.picking-form__icon {
   position: absolute;
-  top: 15px;
-  right: 15px;
-}
 
-.picking-form__label--phone::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 13px;
-  right: 15px;
+  &--email {
+    top: 16px;
+    right: 15px;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 13px;
+  }
 }
 
 .picking-form__text-input {
@@ -71,7 +61,19 @@
   }
 
   &:focus {
-    border: 2px solid $secondary-font-color;
+    border: 1px solid $secondary-font-color;
+
+    & + .picking-form__icon {
+      fill: green;
+    }
+  }
+
+  &--error {
+    border: 1px solid #ff8282;
+
+    & + .picking-form__icon {
+      fill: #ff8282;
+    }
   }
 }
 
@@ -125,14 +127,16 @@
     margin-bottom: 20px;
   }
 
-  .picking-form__label--email::after {
-    top: 19px;
-    right: 20px;
-  }
+  .picking-form__icon {
+    &--email {
+      top: 19px;
+      right: 20px;
+    }
 
-  .picking-form__label--phone::after {
-    top: 16px;
-    right: 16px;
+    &--phone {
+      top: 16px;
+      right: 16px;
+    }
   }
 
   .picking-form__text-input {
@@ -197,16 +201,24 @@
   .picking-form__label--phone {
     padding: 40px;
     width: 50%;
+
+    // &:active {
+    //   .picking-form__icon {
+    //     fill: green;
+    //   }
+    // }
   }
 
-  .picking-form__label--email::after {
-    top: 58px;
-    right: 58px;
-  }
+  .picking-form__icon {
+    &--email {
+      top: 58px;
+      right: 58px;
+    }
 
-  .picking-form__label--phone::after {
-    top: 55px;
-    right: 58px;
+    &--phone {
+      top: 55px;
+      right: 58px;
+    }
   }
 
   .picking-form__fieldset--radio {
@@ -230,7 +242,11 @@
     outline: none;
 
     &:active {
-      border: 2px solid $secondary-font-color;
+      border: 1px solid $secondary-font-color;
+
+      & + .picking-form__icon {
+        fill: green;
+      }
     }
   }
 
