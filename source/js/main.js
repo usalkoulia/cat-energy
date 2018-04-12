@@ -47,3 +47,12 @@ if (search_form) {
     }
   });
 }
+
+var input = document.querySelector(".example__range");
+var cat = document.querySelector(".example__slide--after");
+
+input.addEventListener("input", function(e) {
+var value = e.target.value;
+
+  cat.style.width = value * 10 + '%';
+});

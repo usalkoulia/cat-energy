@@ -225,5 +225,27 @@
   .example__slider {
     z-index: 2;
     width: 690px;
+    height: 500px;
+    position: relative;
+  }
+
+  .example__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    &--before {
+      right: 0;
+    }
+
+    &--after {
+      width: 0;
+    }
+  }
+
+  .example__range {
+    width: 430px;
+    margin: 0 25px;
   }
 }
