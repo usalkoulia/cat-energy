@@ -176,14 +176,11 @@
 }
 
 @media (min-width: $desktop-min-width) {
-  .example {
+  .example__centering {
+    @include desktop-centering;
     padding: 40px;
     display: flex;
     min-height: 675px;
-  }
-
-  .example__centering {
-    @include desktop-centering;
   }
 
   .example__title {

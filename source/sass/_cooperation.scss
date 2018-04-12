@@ -40,9 +40,8 @@
 
 @media (min-width: $desktop-min-width) {
   .cooperation {
-    position: absolute;
-    top: 90px;
-    left: 40px;
+    margin-top: 90px;
+    margin-left: 40px;
     width: 570px;
     padding: 60px 70px;
     z-index: 10;
