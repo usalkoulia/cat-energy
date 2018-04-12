@@ -244,6 +244,11 @@
 
     &--after {
       right: 0;
+
+      .example__image {
+        position: absolute;
+        right: 0;
+      }
     }
   }
 
