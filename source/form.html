@@ -13,159 +13,161 @@
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="header">
-      <div class="header__centering">
-        <div class="header__wrapper">
-          <a class="header__logo header__logo--cat" href="index.html" aria-label="Логотип магазина Cat Energy">
-            <svg class="header__logo-mob" width="33" height="37">
-              <use xlink:href="#icon-logo-mobile"></use>
-            </svg>
-            <svg class="header__logo-tab" width="172" height="57">
-              <use xlink:href="#logo-tablet"></use>
-            </svg>
-          </a>
-          <a class="header__logo header__logo--text" href="index.html">
-            <svg class="header__logo-mob" width="100" height="18">
-              <use xlink:href="#logo-mobile-header"></use>
-            </svg>
-            <svg class="header__logo-desk" width="202" height="60">
-              <use xlink:href="#logo-desktop"></use>
-            </svg>
-          </a>
-          <div class="header__toggle-wrapper">
-            <button class="header__menu-toggle" type="button" aria-label="Открыть меню">
-              <svg class="header__menu-icon header__menu-icon--burger" width="24" height="18">
-                <use xlink:href="#icon-mobile-menu"></use>
+    <div class="centering">
+      <header class="header">
+        <div class="header__centering">
+          <div class="header__wrapper">
+            <a class="header__logo header__logo--cat" href="index.html" aria-label="Логотип магазина Cat Energy">
+              <svg class="header__logo-mob" width="33" height="37">
+                <use xlink:href="#icon-logo-mobile"></use>
               </svg>
-              <svg class="header__menu-icon header__menu-icon--cross" width="18" height="18">
-                <use xlink:href="#icon-close"></use>
+              <svg class="header__logo-tab" width="172" height="57">
+                <use xlink:href="#logo-tablet"></use>
               </svg>
-            </button>
+            </a>
+            <a class="header__logo header__logo--text" href="index.html">
+              <svg class="header__logo-mob" width="100" height="18">
+                <use xlink:href="#logo-mobile-header"></use>
+              </svg>
+              <svg class="header__logo-desk" width="202" height="60">
+                <use xlink:href="#logo-desktop"></use>
+              </svg>
+            </a>
+            <div class="header__toggle-wrapper">
+              <button class="header__menu-toggle" type="button" aria-label="Открыть меню">
+                <svg class="header__menu-icon header__menu-icon--burger" width="24" height="18">
+                  <use xlink:href="#icon-mobile-menu"></use>
+                </svg>
+                <svg class="header__menu-icon header__menu-icon--cross" width="18" height="18">
+                  <use xlink:href="#icon-close"></use>
+                </svg>
+              </button>
+            </div>
           </div>
+          <nav class="header__navigation main-navigation">
+            <div class="main-navigation__wrapper">
+              <ul class="main-navigation__list">
+                <li class="main-navigation__item main-navigation__item--active">
+                  <a class="main-navigation__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link main-navigation__link--active" href="#">Подбор продукции</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <nav class="header__navigation main-navigation">
-          <div class="main-navigation__wrapper">
-            <ul class="main-navigation__list">
-              <li class="main-navigation__item main-navigation__item--active">
-                <a class="main-navigation__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link main-navigation__link--active" href="#">Подбор продукции</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <h1 class="title title--form">Подбор программы</h1>
+      <main>
+        <h1 class="title title--form">Подбор программы</h1>
 
-      <section class="programs">
-        <p class="programs__text">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
-        <form class="programs__form picking-form" action="https://echo.htmlacademy.ru" method="post">
-          <!-- picking - подбор -->
-          <div class="picking-form__wrapper picking-form__wrapper--total">
+        <section class="programs">
+          <p class="programs__text">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+          <form class="programs__form picking-form" action="https://echo.htmlacademy.ru" method="post">
+            <!-- picking - подбор -->
+            <div class="picking-form__wrapper picking-form__wrapper--total">
+              <fieldset class="picking-form__fieldset">
+                <legend class="visually-hidden">Общие данные</legend>
+                <label class="picking-form__label">
+                  Имя:<sup>*</sup>
+                  <input class="picking-form__text-input" type="text" name="name" placeholder="Барсик" id="form-name">
+                </label>
+                <label class="picking-form__label">
+                  Вес (кг):<sup>*</sup>
+                  <input class="picking-form__text-input" type="text" name="weight" placeholder="7" id="form-weight">
+                </label>
+                <label class="picking-form__label">
+                  Возраст (лет):
+                  <input class="picking-form__text-input" type="text" name="age" placeholder="7">
+                </label>
+              </fieldset>
+
+              <fieldset class="picking-form__fieldset picking-form__fieldset--radio">
+                <legend class="visually-hidden">Цель прогаммы</legend>
+                <!-- purpose - цель -->
+                <label class="picking-form__label radio">
+                  <input class="radio__input visually-hidden" type="radio" name="purpose" value="diet" checked>
+                  <span class="radio__icon"></span>
+                  Похудение
+                </label>
+                <label class="picking-form__label radio">
+                  <input class="radio__input visually-hidden" type="radio" name="purpose" value="mass">
+                  <span class="radio__icon"></span>
+                  Набор массы
+                </label>
+                <label class="picking-form__label radio">
+                  <input class="radio__input visually-hidden" type="radio" name="purpose" value="advice">
+                  <span class="radio__icon"></span>
+                  Не знаю (нужен ваш совет)
+                </label>
+              </fieldset>
+            </div>
+
+            <fieldset class="picking-form__fieldset picking-form__fieldset--contacts">
+              <legend class="visually-hidden">Контактные данные</legend>
+              <h2 class="picking-form__title">Контактные данные (владельца кота)</h2>
+              <div class="picking-form__wrapper picking-form__wrapper--contacts">
+                <label class="picking-form__label picking-form__label--email">
+                  E-mail:<sup>*</sup>
+                  <input class="picking-form__text-input" type="email" name="email" placeholder="kuklachev@gmail.com" id="form-email">
+                  <svg class="picking-form__icon picking-form__icon--email" width="17" height="13">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </label>
+                <label class="picking-form__label picking-form__label--phone">
+                  Телефон:<sup>*</sup>
+                  <input class="picking-form__text-input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" id="form-phone">
+                  <svg class="picking-form__icon picking-form__icon--phone" width="20" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </label>
+              </div>
+            </fieldset>
+
             <fieldset class="picking-form__fieldset">
-              <legend class="visually-hidden">Общие данные</legend>
-              <label class="picking-form__label">
-                Имя:<sup>*</sup>
-                <input class="picking-form__text-input" type="text" name="name" placeholder="Барсик" id="form-name">
-              </label>
-              <label class="picking-form__label">
-                Вес (кг):<sup>*</sup>
-                <input class="picking-form__text-input" type="text" name="weight" placeholder="7" id="form-weight">
-              </label>
-              <label class="picking-form__label">
-                Возраст (лет):
-                <input class="picking-form__text-input" type="text" name="age" placeholder="7">
-              </label>
+              <legend class="visually-hidden">Комментарий</legend>
+              <h2 class="picking-form__title">Комментарий</h2>
+              <textarea class="picking-form__textarea" name="name" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
-            <fieldset class="picking-form__fieldset picking-form__fieldset--radio">
-              <legend class="visually-hidden">Цель прогаммы</legend>
-              <!-- purpose - цель -->
-              <label class="picking-form__label radio">
-                <input class="radio__input visually-hidden" type="radio" name="purpose" value="diet" checked>
-                <span class="radio__icon"></span>
-                Похудение
-              </label>
-              <label class="picking-form__label radio">
-                <input class="radio__input visually-hidden" type="radio" name="purpose" value="mass">
-                <span class="radio__icon"></span>
-                Набор массы
-              </label>
-              <label class="picking-form__label radio">
-                <input class="radio__input visually-hidden" type="radio" name="purpose" value="advice">
-                <span class="radio__icon"></span>
-                Не знаю (нужен ваш совет)
-              </label>
+            <fieldset class="picking-form__fieldset">
+              <legend class="visually-hidden">Дополнительно</legend>
+              <h2 class="picking-form__title">Дополнительно</h2>
+              <div class="picking-form__wrapper picking-form__wrapper--options">
+                <label class="picking-form__label checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="sugar-free" checked>
+                  <span class="checkbox__icon"></span>
+                  Сахарозаменитель
+                </label>
+                <label class="picking-form__label checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="water">
+                  <span class="checkbox__icon"></span>
+                  Питьевая вода
+                </label>
+                <label class="picking-form__label checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="milk">
+                  <span class="checkbox__icon"></span>
+                  Молоко
+                </label>
+                <label class="picking-form__label checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="vitamins">
+                  <span class="checkbox__icon"></span>
+                  Витамины
+                </label>
+              </div>
             </fieldset>
-          </div>
 
-          <fieldset class="picking-form__fieldset picking-form__fieldset--contacts">
-            <legend class="visually-hidden">Контактные данные</legend>
-            <h2 class="picking-form__title">Контактные данные (владельца кота)</h2>
-            <div class="picking-form__wrapper picking-form__wrapper--contacts">
-              <label class="picking-form__label picking-form__label--email">
-                E-mail:<sup>*</sup>
-                <input class="picking-form__text-input" type="email" name="email" placeholder="kuklachev@gmail.com" id="form-email">
-                <svg class="picking-form__icon picking-form__icon--email" width="17" height="13">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </label>
-              <label class="picking-form__label picking-form__label--phone">
-                Телефон:<sup>*</sup>
-                <input class="picking-form__text-input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" id="form-phone">
-                <svg class="picking-form__icon picking-form__icon--phone" width="20" height="20">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </label>
+            <div class="programs__button-wrapper">
+              <button class="programs__button button button--primary" type="submit">Отправить заявку</button>
+              <p class="programs__note"><sup>*</sup> — Обязательные поля</p>
             </div>
-          </fieldset>
-
-          <fieldset class="picking-form__fieldset">
-            <legend class="visually-hidden">Комментарий</legend>
-            <h2 class="picking-form__title">Комментарий</h2>
-            <textarea class="picking-form__textarea" name="name" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-
-          <fieldset class="picking-form__fieldset">
-            <legend class="visually-hidden">Дополнительно</legend>
-            <h2 class="picking-form__title">Дополнительно</h2>
-            <div class="picking-form__wrapper picking-form__wrapper--options">
-              <label class="picking-form__label checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="sugar-free" checked>
-                <span class="checkbox__icon"></span>
-                Сахарозаменитель
-              </label>
-              <label class="picking-form__label checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="water">
-                <span class="checkbox__icon"></span>
-                Питьевая вода
-              </label>
-              <label class="picking-form__label checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="milk">
-                <span class="checkbox__icon"></span>
-                Молоко
-              </label>
-              <label class="picking-form__label checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="extra" value="vitamins">
-                <span class="checkbox__icon"></span>
-                Витамины
-              </label>
-            </div>
-          </fieldset>
-
-          <div class="programs__button-wrapper">
-            <button class="programs__button button button--primary" type="submit">Отправить заявку</button>
-            <p class="programs__note"><sup>*</sup> — Обязательные поля</p>
-          </div>
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
 
       <include src="source/_contacts.html"></include>
     </main>

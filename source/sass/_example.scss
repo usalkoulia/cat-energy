@@ -182,6 +182,10 @@
     min-height: 675px;
   }
 
+  .example__centering {
+    @include desktop-centering;
+  }
+
   .example__title {
     margin-bottom: 140px;
     margin-top: 45px;
@@ -240,6 +244,11 @@
 
     &--before {
       width: 0;
+
+      .example__image {
+        position: absolute;
+        left: 0;
+      }
     }
 
     &--after {
