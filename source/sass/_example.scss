@@ -220,6 +220,7 @@
 
   .example__image {
     max-width: 690px;
+    width: 690px;
   }
 
   .example__slider {
@@ -238,11 +239,11 @@
     overflow: hidden;
 
     &--before {
-      right: 0;
+      width: 0;
     }
 
     &--after {
-      width: 0;
+      right: 0;
     }
   }
 

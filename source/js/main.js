@@ -49,10 +49,12 @@ if (search_form) {
 }
 
 var input = document.querySelector(".example__range");
-var cat = document.querySelector(".example__slide--after");
+var cat_before = document.querySelector(".example__slide--before");
+var cat_after = document.querySelector(".example__slide--after");
 
 input.addEventListener("input", function(e) {
 var value = e.target.value;
 
-  cat.style.width = value * 10 + '%';
+  cat_before.style.width = value * 10 + "%";
+  cat_after.style.left = value * 10 + "%";
 });
