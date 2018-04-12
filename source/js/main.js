@@ -52,9 +52,12 @@ var input = document.querySelector(".example__range");
 var cat_before = document.querySelector(".example__slide--before");
 var cat_after = document.querySelector(".example__slide--after");
 
-input.addEventListener("input", function(e) {
-var value = e.target.value;
+if (input && cat_before && cat_after) {
 
-  cat_before.style.width = value * 10 + "%";
-  cat_after.style.left = value * 10 + "%";
-});
+  input.addEventListener("input", function(e) {
+  var value = e.target.value;
+
+    cat_before.style.width = value * 10 + "%";
+    cat_after.style.left = value * 10 + "%";
+  });
+}
