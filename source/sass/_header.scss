@@ -89,6 +89,10 @@
     background-color: transparent;
   }
 
+  .header__centering {
+    @include desktop-centering;
+  }
+
   .header__wrapper {
     padding: 20px 40px;
   }

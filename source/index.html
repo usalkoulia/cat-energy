@@ -13,64 +13,64 @@
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <div class="centering">
-      <header class="header header--index header--active">
-        <div class="header__centering">
-          <div class="header__wrapper">
-            <a class="header__logo header__logo--cat" aria-label="Логотип магазина Cat Energy">
-              <svg class="header__logo-mob" width="33" height="37">
-                <use xlink:href="#icon-logo-mobile"></use>
+    <header class="header header--index header--active">
+      <div class="header__centering">
+        <div class="header__wrapper">
+          <a class="header__logo header__logo--cat" aria-label="Логотип магазина Cat Energy">
+            <svg class="header__logo-mob" width="33" height="37">
+              <use xlink:href="#icon-logo-mobile"></use>
+            </svg>
+            <svg class="header__logo-tab" width="172" height="57">
+              <use xlink:href="#logo-tablet"></use>
+            </svg>
+          </a>
+          <a class="header__logo header__logo--text">
+            <svg class="header__logo-mob" width="100" height="18">
+              <use xlink:href="#logo-mobile-header"></use>
+            </svg>
+            <svg class="header__logo-desk" width="202" height="60">
+              <use xlink:href="#logo-desktop"></use>
+            </svg>
+          </a>
+          <div class="header__toggle-wrapper">
+            <button class="header__menu-toggle" type="button" aria-label="Открыть меню">
+              <svg class="header__menu-icon header__menu-icon--burger" width="24" height="18">
+                <use xlink:href="#icon-mobile-menu"></use>
               </svg>
-              <svg class="header__logo-tab" width="172" height="57">
-                <use xlink:href="#logo-tablet"></use>
+              <svg class="header__menu-icon header__menu-icon--cross" width="18" height="18">
+                <use xlink:href="#icon-close"></use>
               </svg>
-            </a>
-            <a class="header__logo header__logo--text">
-              <svg class="header__logo-mob" width="100" height="18">
-                <use xlink:href="#logo-mobile-header"></use>
-              </svg>
-              <svg class="header__logo-desk" width="202" height="60">
-                <use xlink:href="#logo-desktop"></use>
-              </svg>
-            </a>
-            <div class="header__toggle-wrapper">
-              <button class="header__menu-toggle" type="button" aria-label="Открыть меню">
-                <svg class="header__menu-icon header__menu-icon--burger" width="24" height="18">
-                  <use xlink:href="#icon-mobile-menu"></use>
-                </svg>
-                <svg class="header__menu-icon header__menu-icon--cross" width="18" height="18">
-                  <use xlink:href="#icon-close"></use>
-                </svg>
-              </button>
-            </div>
+            </button>
           </div>
-          <nav class="header__navigation main-navigation">
-            <div class="main-navigation__wrapper">
-              <ul class="main-navigation__list">
-                <li class="main-navigation__item main-navigation__item--active">
-                  <a class="main-navigation__link main-navigation__link--index main-navigation__link--active main-navigation__link--active-white" href="#">Главная</a>
-                </li>
-                <li class="main-navigation__item">
-                  <a class="main-navigation__link main-navigation__link--index" href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="main-navigation__item">
-                  <a class="main-navigation__link main-navigation__link--index" href="form.html">Подбор продукции</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
         </div>
-      </header>
-    </div>
+        <nav class="header__navigation main-navigation">
+          <div class="main-navigation__wrapper">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item main-navigation__item--active">
+                <a class="main-navigation__link main-navigation__link--index main-navigation__link--active main-navigation__link--active-white" href="#">Главная</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--index" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--index" href="form.html">Подбор продукции</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <h1 class="visually-hidden">Основное содержание магазина Cat Energy</h1>
 
       <section class="hero">
-        <div class="hero__wrapper">
-          <h2 class="hero__title title">Функциональное питание для котов</h2>
-          <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <a class="hero__link button button--primary button--big" href="form.html">Подобрать программу</a>
+        <div class="centering">
+          <div class="hero__wrapper">
+            <h2 class="hero__title title">Функциональное питание для котов</h2>
+            <p class="hero__slogan">Занялся собой? Займись котом!</p>
+            <a class="hero__link button button--primary button--big" href="form.html">Подобрать программу</a>
+          </div>
         </div>
       </section>
 
