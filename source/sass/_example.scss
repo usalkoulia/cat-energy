@@ -107,19 +107,9 @@
   }
 }
 
-.example__range::-webkit-slider-runnable-track,
-.example__range::-moz-range-track,
-.example__range::-ms-track {
+.example__range {
   width: 85px;
   margin: 0 20px;
-  -webkit-appearance: none;
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
 }
 
 .example__image {

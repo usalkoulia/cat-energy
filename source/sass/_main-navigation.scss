@@ -37,6 +37,7 @@
 
   .main-navigation__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .main-navigation__item {
