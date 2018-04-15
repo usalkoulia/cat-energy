@@ -74,12 +74,49 @@
 
 .example__slider {
   text-align: center;
+  z-index: 2;
+  width: 280px;
+  padding-top: 250px;
+  height: 290px;
+  position: relative;
+}
+
+.example__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  &--before {
+    width: 0;
+
+    .example__image {
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &--after {
+    right: 0;
+
+    .example__image {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.example__range {
+  width: 85px;
+  margin: 0 20px;
 }
 
 .example__image {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin: 0;
   margin-bottom: 40px;
+  max-width: 280px;
+  width: 280px;
 }
 
 .example__buttons {
