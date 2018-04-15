@@ -70,14 +70,17 @@ if (input && cat_before && cat_after) {
 var button_before = document.querySelector(".example__button--after");
 var button_after = document.querySelector(".example__button--before");
 
-button_before.addEventListener("click", function() {
-  input.value = 0;
 
-  updateSlides();
-});
+if (button_before && button_after) {
+  button_before.addEventListener("click", function() {
+    input.value = 0;
 
-button_after.addEventListener("click", function() {
-  input.value = 10;
+    updateSlides();
+  });
 
-  updateSlides();
-});
+  button_after.addEventListener("click", function() {
+    input.value = 10;
+
+    updateSlides();
+  });
+}
