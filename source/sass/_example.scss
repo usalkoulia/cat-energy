@@ -75,7 +75,7 @@
 .example__slider {
   width: 280px;
   padding-top: 250px;
-  height: 290px;
+  min-height: 290px;
   position: relative;
   margin: 0 auto;
 }
@@ -209,7 +209,7 @@
     z-index: 2;
     width: 690px;
     padding-top: 517px;
-    height: 500px;
+    min-height: 500px;
     position: relative;
   }
 
@@ -246,7 +246,7 @@
   }
 
   .example__buttons {
-    margin-top: 40px;
+    margin: 30px 0;
   }
 
   .example__button {
@@ -298,44 +298,5 @@
   .example__price {
     width: auto;
     text-align: left;
-  }
-
-  .example__image {
-    max-width: 690px;
-    width: 690px;
-  }
-
-  .example__slider {
-    z-index: 2;
-    width: 690px;
-    padding-top: 517px;
-    height: 500px;
-    position: relative;
-  }
-
-  .example__slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-
-    &--before {
-      width: 0;
-
-      .example__image {
-        position: absolute;
-        left: 0;
-      }
-    }
-
-    &--after {
-      right: 0;
-
-      .example__image {
-        position: absolute;
-        right: 0;
-      }
-    }
   }
 }
