@@ -382,7 +382,30 @@
         </section>
       </div>
 
-      <include src="source/_contacts.html"></include>
+      <section class="contacts">
+        <div class="contacts__overlay">
+          <div class="centering">
+            <div class="cooperation cooperation__other">
+              <h2 class="visually-hidden">Сотрудничество с магазином Cat Energy</h2>
+              <p class="cooperation__title">Приглашаем к сотрудничеству дилеров!</p>
+              <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+        <div id="map" class="map">
+        </div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 59.938, lng: 30.321};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 17,
+              center: uluru
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANgu_FS9ntEFMwhUIukHfpYXChDh-k4zU&callback=initMap"
+        async defer></script>
+      </section>
     </main>
 
     <include src="source/_footer.html"></include>

@@ -1,7 +1,14 @@
 .cooperation {
   padding: 20px;
   display: flex;
-  background-color: $bg-color;
+
+  &--index {
+    background-color: #ffffff;
+  }
+
+  &--other {
+    background-color: $bg-color;
+  }
 }
 
 .cooperation__title {
@@ -22,7 +29,6 @@
 @media (min-width: $tablet-min-width) {
   .cooperation {
     padding: 60px 40px;
-    background-color: $bg-color;
     display: flex;
     justify-content: space-between;
   }
@@ -45,7 +51,10 @@
     width: 570px;
     padding: 60px 70px;
     z-index: 10;
-    background-color: #ffffff;
+
+    &--other {
+      background-color: #ffffff;
+    }
   }
 
   .cooperation__title {
