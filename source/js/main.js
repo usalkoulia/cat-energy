@@ -64,3 +64,14 @@ if (input && cat_before && cat_after) {
     cat_after.style.left = value * 10 + "%";
   });
 }
+
+var button_before = document.querySelector(".example__button--before");
+var button_after = document.querySelector(".example__button--after");
+
+button_before.addEventListener("click", function() {
+  input.value = 0;
+});
+
+button_after.addEventListener("click", function() {
+  input.value = 10;
+});
