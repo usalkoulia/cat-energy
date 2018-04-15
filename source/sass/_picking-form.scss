@@ -193,6 +193,10 @@
     }
   }
 
+  .picking-form__fieldset {
+    flex-direction: column;
+  }
+
   .picking-form__fieldset--contacts {
     padding: 0;
 
@@ -205,12 +209,6 @@
   .picking-form__label--phone {
     padding: 40px;
     width: 50%;
-
-    // &:active {
-    //   .picking-form__icon {
-    //     fill: green;
-    //   }
-    // }
   }
 
   .picking-form__icon {
