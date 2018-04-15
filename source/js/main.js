@@ -52,26 +52,32 @@ var input = document.querySelector(".example__range");
 var cat_before = document.querySelector(".example__slide--before");
 var cat_after = document.querySelector(".example__slide--after");
 
+var updateSlides = function() {
+  var value = input.value;
+
+  cat_before.style.width = value * 10 + "%";
+  cat_after.style.left = value * 10 + "%";
+}
+
 if (input && cat_before && cat_after) {
-  const startValue = input.value;
-  cat_before.style.width = startValue * 10 + "%";
-  cat_after.style.left = startValue * 10 + "%";
+  updateSlides();
 
   input.addEventListener("input", function(e) {
-  var value = e.target.value;
-
-    cat_before.style.width = value * 10 + "%";
-    cat_after.style.left = value * 10 + "%";
+    updateSlides();
   });
 }
 
-var button_before = document.querySelector(".example__button--before");
-var button_after = document.querySelector(".example__button--after");
+var button_before = document.querySelector(".example__button--after");
+var button_after = document.querySelector(".example__button--before");
 
 button_before.addEventListener("click", function() {
   input.value = 0;
+
+  updateSlides();
 });
 
 button_after.addEventListener("click", function() {
   input.value = 10;
+
+  updateSlides();
 });
