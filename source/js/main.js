@@ -53,6 +53,9 @@ var cat_before = document.querySelector(".example__slide--before");
 var cat_after = document.querySelector(".example__slide--after");
 
 if (input && cat_before && cat_after) {
+  const startValue = input.value;
+  cat_before.style.width = startValue * 10 + "%";
+  cat_after.style.left = startValue * 10 + "%";
 
   input.addEventListener("input", function(e) {
   var value = e.target.value;
