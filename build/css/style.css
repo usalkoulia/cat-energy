@@ -249,7 +249,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .hero::before {
   content: "";
@@ -320,7 +322,10 @@
 
 @media (min-width: 768px) {
   .hero {
-    height: 865px; }
+    height: 865px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .hero::before {
     display: none; }
   .hero::after {
@@ -351,7 +356,8 @@
     font-size: 20px;
     line-height: 20px; }
   .hero__link {
-    margin-top: 45px; } }
+    margin-top: 45px;
+    max-width: 245px; } }
 
 @media (min-width: 1300px) {
   .hero {
