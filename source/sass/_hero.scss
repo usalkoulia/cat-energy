@@ -2,6 +2,7 @@
   height: 480px;
   display: flex;
   position: relative;
+  justify-content: space-around;
 }
 
 .hero::before {
@@ -70,6 +71,7 @@
 @media (min-width: $tablet-min-width) {
   .hero {
     height: 865px;
+    justify-content: flex-start;
   }
 
   .hero::before {
@@ -109,6 +111,7 @@
 
   .hero__link {
     margin-top: 45px;
+    max-width: 245px;
   }
 }
 
